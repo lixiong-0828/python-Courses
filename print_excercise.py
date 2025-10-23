@@ -311,18 +311,19 @@ import webbrowser
 
 # ============================================== type of dict
 
-dic2 = [{'first key': 'key of first' ,'first value': ['value1','value2','value3']},
-        {'second key': 'key of second' ,'second value': ['value1','value2','value3']}]
-
-print(dic2)
-print(type(dic2)) #type of list (list with [])
-print(type(dic2[0]))  # type of dict (dict with {} )
-
-dic2[0]['correct answer'] = 2
-dic2[1]['correct answer'] = 3
-
-print(dic2)
+# dic2 = [{'first key': 'key of first' ,'first value': ['value1','value2','value3']},
+#         {'second key': 'key of second' ,'second value': ['value1','value2','value3']}]
+#
+# print(dic2)
+# print(type(dic2)) #type of list (list with [])
+# print(type(dic2[0]))  # type of dict (dict with {} )
+#
+# dic2[0]['correct answer'] = 2
+# dic2[1]['correct answer'] = 3
+#
+# print(dic2)
 
 # ==============================================
 
 print("reset main branch")
+print("reset main branch-second")
