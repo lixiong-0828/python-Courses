@@ -72,7 +72,7 @@ while True:
             print("list_items")
             select_item = value['list_items'][0]
             win["user_inpit"].update(select_item)
-        case gui.WINDOW_CLOSED:
+        case gui.WIN_CLOSED:
             break
 
 win.close()
