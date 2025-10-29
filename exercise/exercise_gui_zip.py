@@ -13,20 +13,22 @@ gui_input_02 = gui.InputText(tooltip="Enter yard")
 
 gui_button_01 = gui.FilesBrowse("Choose_files",key="files")
 gui_button_02 = gui.FolderBrowse("dest_folder",key="dest_folder")
-gui_button_03 = gui.Button("Compress")
+gui_button_03 = gui.Button("Compress" , key="compress")
 
 gui_layout = ([gui_lable_01, gui_input_01, gui_button_01],
                 [gui_lable_02, gui_input_02, gui_button_02],
               [gui_button_03,gui_lable_03])
 
 win = gui.Window('My Python Window',layout = gui_layout)
-
+print(win['compress'])
 while True:
     event,values = win.read()
     print(event,values)
+    print(type(values))
+
+
     files = values["files"].split(";")
     folder = values["dest_folder"]
-    # zip_name = "compress_01.zip"
 
     match event:
         case 'Compress':

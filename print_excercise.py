@@ -325,5 +325,64 @@ import webbrowser
 
 # ==============================================
 
-print("reset main branch")
-print("reset main branch-second")
+# print("reset main branch")
+# print("reset main branch-second")
+
+# ============================================== pathlib
+import pathlib
+# path = 'C:/MyPython/PythonProject-02/files/English.txt'
+# important step!!!
+# new_path = pathlib.Path(path)
+
+# print(f"new_path.name :{new_path.name}")  # new_path.name :English.txt
+# print(f"new_path.drive : {new_path.drive}" ) # new_path.drive : C:
+# print(f"new_path.parts :{new_path.parts}" )  # (tuple) new_path.parts :('C:\\', 'MyPython', 'PythonProject-02', 'files', 'English.txt')
+# print(f"new_path.parent :{new_path.parent}" ) # new_path.parent :C:\MyPython\PythonProject-02\files
+# print(f"new_path.suffix : {new_path.suffix}" ) # new_path.suffix : .txt
+# print(f"new_path.stem :{new_path.stem}" ) # new_path.stem :English
+# print(f"new_path.anchor : {new_path.anchor}" ) # new_path.anchor : C:\
+
+# #------------------------------
+# path = "C:/MyPython/PythonProject-02/files"
+# fille_name = "English.txt"
+#
+# full_path = pathlib.Path(path, fille_name)
+#
+# print(f"full_path :{full_path}") # full_path :C:\MyPython\PythonProject-02\files\English.txt
+
+# ============================================== time
+import time
+
+# 2025-10-28 13:46:42
+
+# print(f"time.strftime('%Y-%m-%d %H:%M:%S') : {time.strftime('%Y-%m-%d %H:%M:%S')}")
+# #time.localtime() : time.struct_time(tm_year=2025, tm_mon=10, tm_mday=28, tm_hour=13, tm_min=46, tm_sec=42, tm_wday=1, tm_yday=301, tm_isdst=0)
+# print(f"time.localtime() : {time.localtime()}")
+# #1761630402.8288476
+# print(f"time.time() : {time.time()}")
+#
+# print(time.strftime("%Y%m%d %H-%M-%S"))
+# print(time.strftime("%Y/%m/%d %H-%M-%S"))
+# ==============================================
+# import  FreeSimpleGUI as sg
+# text = sg.Text("Welcome")
+# button = sg.Button("Delete", key="delete")
+# window = sg.Window('My App', layout=[[text], [button]])
+#
+# print(window["delete"])
+# ==============================================
+
+a = ['a','b','c',1,2,3,4,5]
+a.remove('c') # it's ok
+a.remove(1) #   it's ok
+a.remove(0) # error :no such a value
+a.remove(6)  # error :no such a value
+print(a)
+
+b = ['a','b','c',1,2,3,4,5]
+b.pop(0) # it's ok
+b.pop(1)  # it's ok
+b.pop('a')  # error: specify index not a value
+
+
+
