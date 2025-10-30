@@ -370,19 +370,27 @@ import time
 # window = sg.Window('My App', layout=[[text], [button]])
 #
 # print(window["delete"])
+# ==============================================remove ,pop
+
+# a = ['a','b','c',1,2,3,4,5]
+# a.remove('c') # it's ok
+# a.remove(1) #   it's ok
+# a.remove(0) # error :no such a value
+# a.remove(6)  # error :no such a value
+# print(a)
+#
+# b = ['a','b','c',1,2,3,4,5]
+# b.pop(0) # it's ok
+# b.pop(1)  # it's ok
+# b.pop('a')  # error: specify index not a value
+
 # ==============================================
 
-a = ['a','b','c',1,2,3,4,5]
-a.remove('c') # it's ok
-a.remove(1) #   it's ok
-a.remove(0) # error :no such a value
-a.remove(6)  # error :no such a value
-print(a)
+dic = {'11':'aa','12':'bb','13':'cc'}
 
-b = ['a','b','c',1,2,3,4,5]
-b.pop(0) # it's ok
-b.pop(1)  # it's ok
-b.pop('a')  # error: specify index not a value
+for key in dic.keys():
+    print(key)
+    print(dic[key])
 
 
 
